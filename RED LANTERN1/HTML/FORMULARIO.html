@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie sua Ideia</title>
+    <link rel="icon" href="/HTML/IMG/Design_sem_nome__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/HTML/FORMULARIO.CSS">
+</head>
+<body>
+
+    <nav class="NAVBAR">
+        <ul>
+            <li><a href="/HTML/HOME.HTML"> HOME </a></li>
+            <li><a href="/HTML/FORMULARIO.HTML"> ENVIE SUA IDEIA </a></li>
+            <li><a href="/SOBRE.HTML"> SOBRE </a></li>
+        </ul>
+    </nav>
+
+    <section class="formulario_ideia">
+        <h1 align = center>ENVIE SUA IDEIA</h1>
+
+        <form id="formIdeia">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input 
+                    type="text" 
+                    id="nome" 
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                    minlength="3">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input 
+                    type="tel" 
+                    id="telefone" 
+                    name="telefone"
+                    placeholder="Digite seu telefone"
+                    required
+                    pattern="[0-9]{10,11}"
+                    title="Digite apenas números, com 10 ou 11 dígitos. Exemplo: 11987654321">
+            </div>
+
+            <div class="campo">
+                <label for="tipo_site">Tipo de site:</label>
+                <select id="tipo_site" name="tipo_site" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="portfolio">Portfólio</option>
+                    <option value="loja">Loja virtual</option>
+                    <option value="blog">Blog</option>
+                    <option value="empresa">Site empresarial</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="orcamento">Orçamento:</label>
+                <input 
+                    type="number" 
+                    id="orcamento" 
+                    name="orcamento"
+                    placeholder="Ex: 500"
+                    required
+                    min="1">
+            </div>
+
+            <div class="campo">
+                <label for="ideia">Descreva sua ideia:</label>
+                <textarea 
+                    id="ideia" 
+                    name="ideia"
+                    rows="6" 
+                    placeholder="Explique sua ideia para o site"
+                    required
+                    minlength="20"></textarea>
+            </div>
+            <div id = "campobut">
+            <button type="submit" id="botao_enviar">ENVIAR IDEIA</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <h4> Copyright©2026 Red Lantern Design </h4>
+    </footer>
+
+    <script src="/HTML/FORMULARIO.JS"></script>
+</body>
+</html>
